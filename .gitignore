@@ -1,0 +1,9 @@
+*.gem
+.bundle
+.sass-cache
+_site
+*.code-workspace
+vendor
+.DS_Store
+.Spotlight-V100
+.Trashes

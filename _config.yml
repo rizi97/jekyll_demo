@@ -1,0 +1,169 @@
+default_lang: "en"
+baseurl: ""
+darkmode: false
+
+# Social links
+# twitter_username: 
+# github_username:  
+# dribbble_username:
+# facebook_username:
+# flickr_username:
+instagram_username: Name
+linkedin_username: Name
+pinterest_username: Name
+# youtube_username:
+
+email_title: Email
+email: mail@gmail.com
+# phone_title: "Phone"
+# phone: "032142"
+# website_title: "Website"
+# website: "test.com"
+
+languages:
+  en:
+    header:
+      name: User Name
+      title: Job Title
+      download_cv: "Download my CV:"
+    about:
+      about_title: About Me
+      about_profile_image: images/jg.jpg
+      about_content: |
+        This is a test description about me for verification purposes.
+    content:
+      - title: Experience
+        layout: list
+        content:
+          - layout: left
+            border: weak
+            title: Company 1
+            sub_title: Job Title 1
+            caption_1: Area 1
+            link: www.link1.com
+            caption: Date 1 - Present
+            description: |
+              <b>This is a test description about me for verification purposes</b>
+
+              Test description 1
+
+          - layout: left
+            border: weak
+            title: Company 2
+            sub_title: Job Title 2
+            caption_1: Area 2
+            link: www.link2.com
+            caption: Date 2 - Date 1
+            description: |
+              <b>This is a test description about me for verification purposes</b>
+
+              Test description 2
+
+          - layout: left
+            border: weak
+            title: Company 3
+            sub_title: Job Title 3
+            caption_1: Area 3
+            link: www.link3.com
+            caption: Date 3 - Date 2
+            description: |
+              <b>This is a test description about me for verification purposes</b>
+
+              Test description 3
+
+      - title: Education
+        layout: list
+        content:
+          - title: University Name
+            sub_title: Area 1
+            sub_title_2: Area 2
+            caption: Date UNI 1 - Date UNI 2
+            description: |
+              University description
+
+      - title: When I'm Not Coding
+        layout: text
+        content: |
+          Test description new section
+
+  de:
+    header:
+      name: Benutzername
+      title: Berufsbezeichnung
+      download_cv: "Laden Sie meinen Lebenslauf herunter:"
+    about:
+      about_title: Über mich
+      about_profile_image: images/jg.jpg
+      about_content: |
+        Dies ist eine Testbeschreibung über mich zur Verifizierung.
+    content:
+      - title: Testbereich 2
+        layout: list
+        content:
+          - layout: left
+            border: weak
+            title: NAME
+            sub_title: TEST
+            caption_1: test test
+            caption: test test
+            description: |
+              Test, um die Übersetzung zu prüfen
+
+              Test, um die Übersetzung zu prüfen
+
+              Test, um die Übersetzung zu prüfen
+
+          - layout: left
+            border: weak
+            title: NAME
+            sub_title: TEST
+            caption_1: test test
+            caption: test test
+            description: |
+              Test, um die Übersetzung zu prüfen
+
+              Test, um die Übersetzung zu prüfen
+
+              Test, um die Übersetzung zu prüfen
+
+          - layout: left
+            border: weak
+            title: NAME
+            sub_title: TEST
+            caption_1: test test
+            caption: test test
+            description: |
+              Test, um die Übersetzung zu prüfen
+
+              Test, um die Übersetzung zu prüfen
+
+              Test, um die Übersetzung zu prüfen
+
+      - title: Testbereich 3
+        layout: list
+        content:
+          - title: Test
+            sub_title: Test test
+            sub_title_2: Test
+            caption: test test
+            description: |
+              Test, um die Übersetzung zu prüfen
+
+              Test, um die Übersetzung zu prüfen
+
+              Test, um die Übersetzung zu prüfen
+      
+      - title: Testbereich 4
+        layout: text
+        content: | 
+          Test, um die Übersetzung zu prüfen
+
+          Test, um die Übersetzung zu prüfen
+
+          Test, um die Übersetzung zu prüfen
+      
+
+
+# Footer
+footer_references: "References on request"
+footer_show_references: false

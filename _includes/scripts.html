@@ -1,0 +1,53 @@
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      
+        const currentLang = window.location.pathname.startsWith('/de') ? 'de' : 'en';
+
+        // Theme toggle logic
+        const themeToggle = document.getElementById("theme-toggle");
+        if (themeToggle) {
+            themeToggle.addEventListener("click", function () {
+                document.body.classList.toggle("dark");
+                if (document.body.classList.contains("dark")) {
+                    localStorage.setItem("theme", "dark");
+                } else {
+                    localStorage.setItem("theme", "light");
+                }
+            });
+
+            // Apply saved theme from localStorage
+            const savedTheme = localStorage.getItem("theme");
+            if (savedTheme && savedTheme === "dark") {
+                document.body.classList.add("dark");
+            }
+        }
+
+        // CV download link logic
+        const cvLink = document.getElementById("cv-download");
+
+     
+        if (cvLink) {
+            if (currentLang === 'de') {
+                cvLink.href = "{{ '/assets/cv_de.pdf' | relative_url }}";
+                cvLink.setAttribute("download", "CV_de.pdf");
+            } else {
+                cvLink.href = "{{ '/assets/cv.pdf' | relative_url }}";
+                cvLink.setAttribute("download", "CV.pdf");
+            }
+        }
+
+        // Toggle language on button click
+        const languageToggle = document.getElementById("language-toggle");
+        if (languageToggle) {
+            languageToggle.addEventListener("click", function () {
+                if (currentLang === 'en') {
+            
+                    window.location.href = "/de" + window.location.pathname;
+                } else {
+             
+                    window.location.href = window.location.pathname.replace("/de", "");
+                }
+            });
+        }
+    });
+</script>

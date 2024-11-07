@@ -1,0 +1,119 @@
+ul.icons a:hover {
+  background: rgba(0, 0, 0, 0.025);
+}
+
+ul.icons li {
+  display: inline-block;
+  padding-left: 0.75rem;
+}
+
+ul.icons a {
+  -moz-transition: background-color 0.25s ease-in-out;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  -ms-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+  display: inline-block;
+  width: 2.75rem;
+  height: 2.75rem;
+  line-height: 2.8rem;
+  text-align: center;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 100%;
+  color: #aaa;
+}
+
+.icons i {
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.icons {
+  padding: 0;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .icons {
+    text-align: center;
+  }
+}
+
+.dark {
+  .icons i {
+    background: none;
+    color: #222;
+  }
+
+  .icons a:hover i {
+    color: #e6e6e6;
+  }
+}
+
+/*======================*/
+
+ul.small-icons a:hover {
+  background: rgba(0, 0, 0, 0.025);
+}
+
+ul.small-icons li {
+  display: inline-block;
+  padding-left: 0.5rem;
+  /* Уменьшен отступ между маленькими кнопками */
+}
+
+ul.small-icons a {
+  -moz-transition: background-color 0.25s ease-in-out;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  -ms-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+  display: inline-block;
+  width: 2.5rem;
+  /* Уменьшен размер кнопки */
+  height: 2.5rem;
+  /* Уменьшен размер кнопки */
+  line-height: 2.5rem;
+  /* Соответствует высоте кнопки для центрирования */
+  text-align: center;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 100%;
+  color: #aaa;
+}
+
+.small-icons i {
+  font-size: 18px;
+  /* Уменьшен размер иконки */
+  line-height: 4.0rem;
+  /* Соответствует высоте кнопки */
+}
+
+.small-icons {
+  padding: 0;
+  font-size: 0.875rem;
+  /* Немного уменьшен размер текста */
+  margin-bottom: 10px;
+  /* Уменьшен нижний отступ глобальный отступ*/
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .small-icons {
+    text-align: center;
+  }
+}
+
+.dark {
+  .small-icons i {
+    background: none;
+    color: #222;
+  }
+
+  .small-icons a:hover i {
+    color: #e6e6e6;
+  }
+}
