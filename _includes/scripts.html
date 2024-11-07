@@ -36,18 +36,24 @@
             }
         }
 
-        // Toggle language on button click
-        const languageToggle = document.getElementById("language-toggle");
-        if (languageToggle) {
-            languageToggle.addEventListener("click", function () {
-                if (currentLang === 'en') {
-            
-                    window.location.href = "/de" + window.location.pathname;
-                } else {
-             
-                    window.location.href = window.location.pathname.replace("/de", "");
-                }
-            });
-        }
+        document.getElementById("language-toggle").addEventListener("click", function (event) {
+            event.preventDefault();
+
+            const currentUrl = window.location.href;
+
+            const isGerman = currentUrl.includes("/de/");
+
+            let newUrl = currentUrl;
+        
+            if (isGerman) {
+                newUrl = currentUrl.replace("/de/", "/");
+            } else {
+                console.log("test12: ", newUrl)
+                newUrl = window.location.href + '/de';
+            }
+
+            window.location.href = newUrl;
+        });
+
     });
 </script>

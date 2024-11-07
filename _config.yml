@@ -1,5 +1,5 @@
 default_lang: "en"
-baseurl: ""
+baseurl: "/jekyll_demo"
 darkmode: false
 
 # Social links
