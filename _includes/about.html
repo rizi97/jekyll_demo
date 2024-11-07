@@ -3,7 +3,7 @@
         {{  site.languages[page.lang].about.about_title | default: "About Me" }}
     </h3>
     <div class="row clearfix">
-        {%- if site.about_profile_image -%}
+        {%- if  site.languages[page.lang].about.about_profile_image -%}
         <div class="col-xs-12 col-sm-4 col-md-3 no-print">
         <span class="profile-img" style="background-image: url({{ site.languages[page.lang].about.about_profile_image | relative_url }})"></span>
         </div>

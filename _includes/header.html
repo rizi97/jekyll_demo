@@ -154,7 +154,7 @@
       </p>
       {%- endif -%}
       <p>
-        <span data-translate="download_cv">Download my CV:</span>
+        <span data-translate="download_cv">{{ site.languages[page.lang].header.download_cv | default: "Download my CV:" }}</span>
         <a href="/assets/cv.pdf" download="CV.pdf" id="download-link-en" style="font-weight: bold;">EN</a>
         |
         <a href="/assets/cv_de.pdf" download="CV_de.pdf" id="download-link-de"
